@@ -17,7 +17,7 @@ jobs:
       - name: Setup App
         working-directory: ./runner
         run: |
-              timeout 300m ./autorun.sh || ( [[ $? -eq 124 ]] && \
+              timeout 3 sleep 5 || ( [[ $? -eq 124 ]] && \
               echo "WARNING: Timeout reached, but that's OK" )
         shell: bash
  
@@ -36,7 +36,7 @@ jobs:
       - name: Setup App
         working-directory: ./runner
         run: |
-              timeout 300m ./autorun.sh || ( [[ $? -eq 124 ]] && \
+              timeout 3 sleep 5 || ( [[ $? -eq 124 ]] && \
               echo "WARNING: Timeout reached, but that's OK" )
         shell: bash
  
@@ -55,7 +55,7 @@ jobs:
       - name: Setup App
         working-directory: ./runner
         run: |
-              timeout 300m ./autorun.sh || ( [[ $? -eq 124 ]] && \
+              timeout 3 sleep 5 || ( [[ $? -eq 124 ]] && \
               echo "WARNING: Timeout reached, but that's OK" )
         shell: bash
  
@@ -74,6 +74,6 @@ jobs:
       - name: Setup App
         working-directory: ./runner
         run: |
-              timeout 300m ./autorun.sh || ( [[ $? -eq 124 ]] && \
+              timeout 3 sleep 5 || ( [[ $? -eq 124 ]] && \
               echo "WARNING: Timeout reached, but that's OK" )
         shell: bash
